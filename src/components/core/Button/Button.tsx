@@ -9,6 +9,8 @@ export type ButtonType = {
   size?: 'small' | 'medium' | 'large';
   variant?: 'contained' | 'outlined' | 'text';
   sx?: object;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
+  disabled?: boolean;
 };
 
 const Button: React.FC<ButtonType> = props => {
@@ -18,6 +20,8 @@ const Button: React.FC<ButtonType> = props => {
     size = 'medium',
     variant = 'contained',
     sx,
+    onClick,
+    disabled,
   } = props;
 
   return (
@@ -26,6 +30,8 @@ const Button: React.FC<ButtonType> = props => {
       size={size}
       variant={variant}
       sx={sx}
+      onClick={onClick}
+      disabled={disabled}
     >
       {label}
     </MuiButton>
