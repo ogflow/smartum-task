@@ -1,10 +1,10 @@
 import * as React from 'react';
 
-import Venues from './components/functional/Venues/Venues';
+import VenuesPage from './components/pages/VenuesPage/VenuesPage';
 
 function App () {
   return (
-    <Venues/>
+    <VenuesPage/>
   );
 }
 
