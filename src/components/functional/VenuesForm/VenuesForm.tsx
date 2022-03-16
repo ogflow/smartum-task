@@ -107,5 +107,9 @@ const VenuesForm: React.FC<VenuesFormType> = props => {
 export default VenuesForm;
 
 const StyledFormGroup = styled(FormGroup)`
-  width: 25em;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 25em;
+  }
 `;

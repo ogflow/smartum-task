@@ -54,9 +54,15 @@ const Root = styled.div`
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  padding: 4em 1em;
+
+  @media (min-width: 768px) {
   padding: 8em 2em;
+  }
 `;
 
 const StyledStack = styled(Stack)`
   margin-top: 4em;
+  width: 100%;
+  align-items: center;
 `;
